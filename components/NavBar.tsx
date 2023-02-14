@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <div className="bg-purple">
      
-      <Navbar fluid={true} rounded={true} className="max-w-screen-lg  items-center bg-purple">
+      <Navbar fluid={true} rounded={true} className=" max-w-3xl !bg-purple">
         <Navbar.Brand href="/">
           <Image
             src= {logo}
@@ -25,7 +25,7 @@ const NavBar = () => {
         <Navbar.Toggle />
      
         <Navbar.Collapse>
-          <Navbar.Link href="/" active={true} className="flex md:order-2">
+          <Navbar.Link href="/" active={true} className="flex md:order-2 ">
             Home
           </Navbar.Link>
           <Navbar.Link href="/about">About</Navbar.Link>

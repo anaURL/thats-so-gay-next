@@ -36,7 +36,7 @@ export default function AddMicroagression() {
     };
 
     return (
-        <Layout>
+        <>
           <form onSubmit={handleSubmit} className="form">
             {error ? <div className="alert-error">{error}</div> : null}
             {message ? <div className="alert-message">{message}</div> : null}
@@ -101,6 +101,6 @@ export default function AddMicroagression() {
               }
             `}
           </style>
-        </Layout>
+        </>
       );
   }

@@ -5,12 +5,9 @@ export default function MyApp({ Component, pageProps, title, description }) {
     return (
       <div>
         <title>{title}</title>
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-          />
-             <Layout>
-          <Component title={title} description={description} {...pageProps} />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+          <Layout>
+          <Component title={title} description={description} {...pageProps} className="flex flex-col min-h-screen" />
           </Layout>
 
       </div>
