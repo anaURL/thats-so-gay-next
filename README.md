@@ -3,7 +3,7 @@
 'That's so gay' is a simple, easy-to-use, non-profit platform with aim to collect everyday microaggressions towards lesbian, gay, bisexual, trans, intersex and queer (LGBTIQ+) communities and highlight their harmful impact.
 
 This project is heavily inspired by the [Micropedia](https://www.themicropedia.org/), the first encyclopedia of microagressions.
-It is an improved version of the original app built with Node, Express and EJS as templating language.
+It is an improved version of [the original app built with Node, Express and EJS as templating language](https://github.com/anaURL/thats-so-gay).
 
 **Link to MVC:** Soon
 
