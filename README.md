@@ -1,9 +1,6 @@
 # That's so gay!
 
-'That's so gay' is a simple, easy-to-use, non-profit platform with aim to collect everyday microaggressions towards lesbian, gay, bisexual, trans, intersex and queer (LGBTIQ+) communities and highlight their harmful impact.
-
-This project is heavily inspired by the [Micropedia](https://www.themicropedia.org/), the first encyclopedia of microagressions.
-It is an improved version of [the original app built with Node, Express and EJS as templating language](https://github.com/anaURL/thats-so-gay).
+'That's so gay' is a simple, easy-to-use, non-profit platform with aim to collect everyday microaggressions towards lesbian, gay, bisexual, trans, intersex and queer (LGBTIQ+) communities and highlight their harmful impact. It is an improved version of [my app built with Node, Express and EJS as templating language](https://github.com/anaURL/thats-so-gay).
 
 **Link to MVC:** Soon
 
@@ -21,4 +18,7 @@ This is a full-stack web application built with Next.js and React, utilizing Mon
 - Add OAuth so that only registered users can edit/delete content
 
 # Lessons learned
-Through this project, I gained a deep understanding of the Next.js framework and was particularly impressed by how it simplifies tasks such as routing, image optimization, and building APIs, as well as its flexibility with both static and dynamic pages. I also utilized Tailwind CSS, a popular styling solution, to help organize the app's design. While I feel comfortable with these tools, there is always room for improvement and growth. One of the most challenging aspects of this project was learning how to connect to the database using Typescript, a language that was new to me. However, after some dedicated effort and problem-solving, I was able to overcome this obstacle and solidify my understanding. While my initial intention was to use Next13, I ultimately decided to use Next12 due to its more extensive documentation, which helped me navigate and better utilize this framework.
+Through this project, I gained a deep understanding of the Next.js framework and was particularly impressed by how it simplifies tasks such as routing, image optimization, and building APIs, as well as its flexibility with both static and dynamic pages. I also utilized Tailwind CSS, a popular styling solution, to help organize the app's design. One of the most challenging aspects of this project was learning how to connect to the database using Typescript, a language that was new to me. However, after some dedicated effort and problem-solving, I was able to overcome this obstacle and solidify my understanding. While my initial intention was to use Next13, I ultimately decided to use Next12 due to its more extensive documentation, which helped me navigate and better utilize this framework.
+
+
+This project was heavily inspired by the [Micropedia](https://www.themicropedia.org/), the first encyclopedia of microagressions.
