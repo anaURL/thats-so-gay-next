@@ -61,7 +61,7 @@ return (
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3 ">
                     <a
-                      href="/add"
+                      href="/contribute"
                       className="flex w-full items-center justify-center rounded-md border-2  hover:text-lime focus:ring-4 focus:outline-none px-8 py-3 text-2xl lg:text-base font-bold  md:py-4 md:px-10"> Contribute </a>
                   </div>
                 </div>
@@ -88,7 +88,7 @@ return (
                   <p className="font-normal text-lg mt-4 text-justify text-black tracking-tight md:tracking-normal"> {microagression.content}</p>
                 </div>
                 <p className="text-center font-normal lg:mt-6 ">
-                  <a className="text-lime bg-purple text-xl text-xl sm:mb-0 md:mb-5" href={`/add/${microagression._id}`}>Want to contribute? Suggest revision of the microagression</a> </p>    
+                  <a className="text-lime bg-purple text-xl sm:mb-0 md:mb-5" href={`/contribute/${microagression._id}`}>Want to contribute? Suggest revision of the microagression</a> </p>    
                   <p className="text-center font-normal ">  <a href="/resources" className="text-white text-xl mb-0"> How to address microagressions? </a>  </p>               
 
 {/* DELETE option */}

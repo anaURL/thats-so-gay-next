@@ -1,3 +1,5 @@
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -24,6 +26,7 @@ module.exports = {
       three:'#aa56d4' ,
       white:'#FFFFFF'    
     }
+
   },
   },
   screens: {
