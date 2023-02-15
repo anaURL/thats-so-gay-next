@@ -13,7 +13,7 @@ return (
         <div className ="mx-auto mb:m max-w-7xl px-4 pt-12 md:px-8 sm:px-6 lg:px-8 ">
             <div className="bg-center hidden md:block h-screen bg-no-repeat bg-auto bg-[url('https://images.unsplash.com/photo-1591457410079-5f4ba0206fe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] h-auto"></div>
 
-         <section className="bg-white py-4 mx-auto my-4 px-8 sm:px-6 lg:px-8 text-gray-900"> 
+         <section className="bg-white py-4 mx-auto my-4 px-8 sm:px-6 lg:px-8 text-gray-900 rounded-md"> 
              <h2 className="text-3xl m-4 mt-8 font-black">  ⏯ PAUSE</h2>
              <p className= "text-2xl m-4">  Don’t be in a rush to speak or act. Pause before asking someone a personal question. 
                  Pause before you describe a person’s personality in a certain way. Pause before you make a comparison between someone 
