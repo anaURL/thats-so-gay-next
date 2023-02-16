@@ -142,46 +142,11 @@ type PageParams = {
             />
           </div>
           <div className="form-group">
-            <button type="submit" className="submit_btn">
-              Update
+          <button type="submit" className="rounded border-2 p-2 text-lime"> 
+          Update microagression
             </button>
           </div>
         </form>
-        <style jsx>
-          {`
-            .form {
-              width: 400px;
-              margin: 10px auto;
-            }
-            .form-group {
-              width: 100%;
-              margin-bottom: 10px;
-              display: block;
-            }
-            .form-group label {
-              display: block;
-              margin-bottom: 10px;
-            }
-            .form-group input[type="text"] {
-              padding: 10px;
-              width: 100%;
-            }
-            .form-group textarea {
-              padding: 10px;
-              width: 100%;
-            }
-            .alert-error {
-              width: 100%;
-              color: red;
-              margin-bottom: 10px;
-            }
-            .alert-message {
-              width: 100%;
-              color: green;
-              margin-bottom: 10px;
-            }
-          `}
-        </style>
       </>
     );
   }

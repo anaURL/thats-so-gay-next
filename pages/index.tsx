@@ -50,20 +50,24 @@ return (
                   Why you shouldn't be using this and other microagressions
                   toward the queer community
                 </p>
-                <div className="mt-5 sm:mt-8 sm:flex sm:justify-center ">
+                <div className="mt-5 sm:m-8 sm:flex flex-row sm:justify-center ">
                   <div className="rounded-md">
                     {" "}
-                    <button className="rounded-md border-2 px-8 py-3 text-2xl lg:text-base font-bold md:py-4 md:px-10 text-black bg-gradient-to-r from-greenish to-lime"
+                    <button className="rounded-md border-2 px-8 py-3 lg:text-base font-bold md:py-4 md:px-10 text-black bg-gradient-to-r from-greenish to-lime"
                      onClick={() => scrollBy(1000, 0)}>
                       {" "}
                       Tell me more!
                     </button>
                   </div>
-                  <div className="mt-3 sm:mt-0 sm:ml-3 ">
+                  <div className="sm:flex md:mx-2 sm:justify-center ">
+                       <a href="/contribute" className="mx-auto items-center justify-center rounded-md border-2 text-base font-bold py-3 px-10 md:text-lg text-black ">Contribute</a>
+                          </div>
+                 
+                  {/* <div className="mt-3 sm:mt-0 sm:ml-3 ">
                     <a
                       href="/contribute"
                       className="md:flex w-full items-center justify-center rounded-md border-2  hover:text-lime focus:ring-4 focus:outline-none px-8 py-3 text-2xl lg:text-base font-bold  md:py-4 md:px-10"> Contribute </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -72,7 +76,7 @@ return (
 
 {/* Microagressions from MongoDB */}
  
- <div className=' max-w-6xl '> 
+ <div className='max-w-6xl'> 
     <div className="mx-auto lg:mt-32 mt-12 sm:justify-center lg:gap-8 md:py-8 sm:px-6 lg:px-8">
       <h1 className="text-5xl md:text-5xl lg:text-6xl font-black text-lime tracking-tight lg:mb-4 lg:pb-4 drop-shadow-lg shadow-lime text-center">What are microagressions? </h1>
       <p className='text-white font-light text-2xl leading-normal lg:text-2xl text-center m-4 sm:my-6 px-6 lg:px-0' > Assuming someone's gender pronouns, not asking about their pronouns, and continuing to use the wrong pronouns after the correct ones have been shared is one very common example of microaggression that deny the personal experience, emotions, or thoughts of a person. Start browsing to learn more about microagressions and their impact.</p>
@@ -106,10 +110,9 @@ return (
       )}
     </div>
     <div className="m-3 sm:mt-6 sm:ml-6 items-center">
-          <a href="/contribute" className=" mx-auto flex w-1/3 items-center justify-center rounded-md border-2 px-8 py-3  text-base font-bold md:py-4 md:px-10 md:text-lg  text-black bg-gradient-to-r from-greenish to-lime">Contribute</a>
+          <a href="/contribute" className="mx-auto flex md:w-1/3 justify-center items-center justify-center rounded-md border-2 px-8 py-3  text-base font-bold md:py-4 md:px-10 md:text-lg  text-black bg-gradient-to-r from-greenish to-lime">Contribute</a>
         </div>
     </div>
-
     
     </div> 
 
