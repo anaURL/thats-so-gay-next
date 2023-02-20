@@ -10,7 +10,7 @@ export default function AddMicroagression() {
       e.preventDefault();
       if (title && content) {
         try {
-          let response = await fetch("http://localhost:3000/api/addMicroagression", {
+          let response = await fetch("/api/addMicroagression", {
             method: "POST",
             body: JSON.stringify({
               title,

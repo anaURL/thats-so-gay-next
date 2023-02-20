@@ -28,7 +28,7 @@ type PageParams = {
   > {
     try {
       let response = await fetch(
-        "http://localhost:3000/api/getMicroagression?id=" + params?.id
+        "/api/getMicroagression?id=" + params?.id
       );
   
       let responseFromServer: ResponseFromServer = await response.json();
@@ -58,7 +58,7 @@ type PageParams = {
   }
   
   export async function getStaticPaths() {
-    let microagressions = await fetch("http://localhost:3000/api/getMicroagressions");
+    let microagressions = await fetch("/api/getMicroagressions");
   
     let microagressionFromServer: [Microagression] = await microagressions.json();
     return {
@@ -85,7 +85,7 @@ type PageParams = {
       if (microagressionTitle && microagressionContent) {
         try {
           let response = await fetch(
-            "http://localhost:3000/api/editMicroagression?id=" + _id,
+            "/api/editMicroagression?id=" + _id,
             {
               method: "POST",
               body: JSON.stringify({

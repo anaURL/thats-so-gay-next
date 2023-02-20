@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import { useScrollBy } from "react-use-window-scroll";
+import getMicroagressions from "./api/getMicroagressions";
 
 
 type Props = {
@@ -74,7 +75,7 @@ return (
             <div className="basis-1/2 bg-no-repeat hidden lg:block bg-auto bg-[url('https://images.unsplash.com/photo-1530031092055-18d4a16ff6e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80')] h-auto" aria-label="Banner with a Queer liberation not rainbow capitalism, from the Pride parade in Geneva (Switzerland), July 2019." ></div>
             </main>
 
-{/* Microagressions from MongoDB */}
+{/* Retrieving microagressions from MongoDB */}
  
  <div className='max-w-6xl'> 
     <div className="mx-auto lg:mt-32 mt-12 sm:justify-center lg:gap-8 md:py-8 sm:px-6 lg:px-8">
@@ -110,7 +111,7 @@ return (
       )}
     </div>
     <div className="m-3 sm:mt-6 sm:ml-6 items-center">
-          <a href="/contribute" className="mx-auto flex md:w-1/3 justify-center items-center justify-center rounded-md border-2 px-8 py-3  text-base font-bold md:py-4 md:px-10 md:text-lg  text-black bg-gradient-to-r from-greenish to-lime">Contribute</a>
+          <a href="/contribute" className="mx-auto flex md:w-1/3 items-center justify-center rounded-md border-2 px-8 py-3  text-base font-bold md:py-4 md:px-10 md:text-lg  text-black bg-gradient-to-r from-greenish to-lime">Contribute</a>
         </div>
     </div>
     
@@ -120,15 +121,33 @@ return (
 
 }
 
-export async function getServerSideProps() {
-  try {
-    let response = await fetch('http://localhost:3000/api/getMicroagressions');
-    let microagressions = await response.json();
+// export async function getServerSideProps() {
+//   try {
+//     let response = await fetch('/api/getMicroagressions');
+//     let microagressions = await response.json();
 
+//     return {
+//       props: { microagressions: JSON.parse(JSON.stringify(microagressions)) },
+//     };
+//   } catch (e) {
+//     console.error(e);
+//   } 
+
+// }
+
+export async function getServerSideProps () {
+  try {
+    // const microagressions = await getMicroagressions();
+    const microagressions = await getMicroagressions();
     return {
-      props: { microagressions: JSON.parse(JSON.stringify(microagressions)) },
+      props: {
+        microagressions: JSON.parse(JSON.stringify(microagressions))
+      },
     };
   } catch (e) {
     console.error(e);
+    return {
+      props: {},
+    };
   }
 }
