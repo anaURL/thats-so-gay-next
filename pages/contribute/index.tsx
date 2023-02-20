@@ -10,7 +10,7 @@ export default function AddMicroagression() {
       e.preventDefault();
       if (title && content) {
         try {
-          let response = await fetch("/api/addMicroagression", {
+          let response = await fetch("thats-so-gay-next-kd9tnm32c-anaurl.vercel.app/api/addMicroagression", {
             method: "POST",
             body: JSON.stringify({
               title,
