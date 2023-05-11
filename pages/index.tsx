@@ -163,7 +163,7 @@ export default function Microagressions(props: Props) {
 
 export async function getServerSideProps() {
   try {
-    const microagressions = await getMicroagressions("microagressions");
+    const microagressions = await getMicroagressions();
     return {
       props: {
         microagressionsProp: JSON.parse(JSON.stringify(microagressions)),
