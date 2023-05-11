@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useScrollBy } from "react-use-window-scroll";
+import { getMicroagressions } from './api/getMicroagressions';
+
 
 type Props = {
   microagressionsProp: [Microagression];
