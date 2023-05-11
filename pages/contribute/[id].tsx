@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import type { GetStaticPropsContext, GetStaticPropsResult } from "next";
 
+
 type PageParams = {
     id: string;
   };
@@ -85,7 +86,7 @@ type PageParams = {
       if (microagressionTitle && microagressionContent) {
         try {
           let response = await fetch(
-            "http://localhost:3000/api/addMicroagression",
+            "/api/addMicroagression",
             {
               method: "POST",
               body: JSON.stringify({
