@@ -11,7 +11,7 @@ export default function AddMicroagression() {
     if (title && content) {
       try {
         let response = await fetch(
-          "thats-so-gay-next-kd9tnm32c-anaurl.vercel.app/api/addMicroagression",
+          "/api/addMicroagression",
           {
             method: "POST",
             body: JSON.stringify({

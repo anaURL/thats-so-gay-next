@@ -85,7 +85,7 @@ type PageParams = {
       if (microagressionTitle && microagressionContent) {
         try {
           let response = await fetch(
-            "thats-so-gay-next-kd9tnm32c-anaurl.vercel.app/api/editMicroagression?id=" + _id,
+            "http://localhost:3000/api/addMicroagression",
             {
               method: "POST",
               body: JSON.stringify({
