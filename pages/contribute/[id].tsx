@@ -28,7 +28,7 @@ type PageParams = {
   > {
     try {
       let response = await fetch(
-        "thats-so-gay-next-kd9tnm32c-anaurl.vercel.app/api/getMicroagression?id=" + params?.id
+        "/api/getMicroagression?id=" + params?.id
       );
   
       let responseFromServer: ResponseFromServer = await response.json();
