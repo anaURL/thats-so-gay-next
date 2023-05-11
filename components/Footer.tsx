@@ -6,7 +6,7 @@ import logo from "../public/img/tsg3.png"
 function MyFooter() {
   return (
     <>
-      <Footer container={true} className="!bg-purple ">
+      <Footer container={true} className="!bg-purple mt-auto">
         <div className="w-full text-center">
           <div className="sm:flex sm:items-center sm:justify-between text-center">
           <Image
