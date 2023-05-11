@@ -58,7 +58,7 @@ type PageParams = {
   }
   
   export async function getStaticPaths() {
-    let microagressions = await fetch("thats-so-gay-next-kd9tnm32c-anaurl.vercel.app/api/getMicroagressions");
+    let microagressions = await fetch("/api/getMicroagressions");
   
     let microagressionFromServer: [Microagression] = await microagressions.json();
     return {
