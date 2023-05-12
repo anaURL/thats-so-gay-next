@@ -9,7 +9,7 @@ return (
       <h1 className="md:mt-2 lg:text-7xl md:text-7xl text-4xl font-black sm:leading-8 md:tracking-tight md:px-8 text-lime"> How to avoid causing microagressions?</h1>
       <h3 className="text-2xl py-5 font-light md:mt-8 text-white" >  As suggested by the name, microaggressions seem small; but compounded over time, they can have an enormous impact on a person’s experience, health, and overall well-being. Research suggests that subtle forms of interpersonal discrimination like microaggressions are at least as harmful as more-overt expressions of discrimination. Below are some helpful tips from researchers to consider: </h3>
         </div>  
-        </div> 
+       
         <div className ="mx-auto mb:m max-w-7xl px-4 pt-12 md:px-8 sm:px-6 lg:px-8 ">
             <div className="bg-center hidden md:block h-screen bg-no-repeat bg-auto bg-[url('https://images.unsplash.com/photo-1591457410079-5f4ba0206fe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] h-auto"></div>
 
@@ -53,6 +53,7 @@ return (
 //                   </button> */}
                 </section>
         </div>
+        </div> 
  </>
     
 );

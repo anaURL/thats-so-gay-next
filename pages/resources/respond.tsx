@@ -5,7 +5,7 @@ function Respond() {
         <div className="text-center md:px-12 my-6">
           <h1 className="md:mt-2 lg:text-7xl md:text-7xl text-4xl font-black sm:leading-8 md:tracking-tight md:px-8 text-lime">
             {" "}
-            How to avoid causing microagressions?
+            How to respond to microagressions?
           </h1>
           <h3 className="text-2xl py-5 font-light md:mt-8 text-white">
             {" "}
@@ -17,9 +17,20 @@ function Respond() {
             Below are some helpful tips from researchers to consider:{" "}
           </h3>
         </div>
-      </div>
-      <div className="mx-auto mb:m max-w-7xl px-4 pt-20 md:px-8 sm:px-6 lg:px-8 ">
-        <div className="bg-center hidden md:block h-screen bg-no-repeat bg-auto bg-[url('https://images.unsplash.com/photo-1596796099969-bdada13e2a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] h-auto"></div>
+
+        {/* <div
+          className="bg-center md:block h-screen bg-no-repeat bg-auto bg-cover"
+          style={{
+            backgroundImage:
+              "https://images.unsplash.com/photo-1596796099969-bdada13e2a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')",
+          }}
+          alt="Banner with a Queer liberation not rainbow capitalism, from the Pride parade in Geneva (Switzerland), July 2019."
+        ></div> */}
+    
+
+                  <div className="hidden md:block h-screen bg-no-repeat bg-auto bg-[url('https://images.unsplash.com/photo-1596796099969-bdada13e2a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] h-auto"></div>
+
+        {/* <div className="bg-center hidden md:block h-screen bg-no-repeat bg-auto bg-[url('https://images.unsplash.com/photo-1596796099969-bdada13e2a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] h-auto"></div> */}
       </div>
       <section className="bg-white py-4 mx-auto max-w-7xl px-8 sm:px-6 lg:px-8 text-gray-900 ">
         <p className="text-2xl m-4">
