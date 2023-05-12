@@ -1,38 +1,30 @@
+import Link from "next/link";
+
+
 function Respond() {
   return (
     <>
-      <div className="mx-auto items-center max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="text-center md:px-12 my-6">
           <h1 className="md:mt-2 lg:text-7xl md:text-7xl text-4xl font-black sm:leading-8 md:tracking-tight md:px-8 text-lime">
-            {" "}
-            How to respond to microagressions?
+            How to respond to microaggressions?
           </h1>
           <h3 className="text-2xl py-5 font-light md:mt-8 text-white">
-            {" "}
-            As suggested by the name, microaggressions seem small; but
-            compounded over time, they can have an enormous impact on a person’s
-            experience, health, and overall well-being. Research suggests that
-            subtle forms of interpersonal discrimination like microaggressions
-            are at least as harmful as more-overt expressions of discrimination.
-            Below are some helpful tips from researchers to consider:{" "}
+            As suggested by the name, microaggressions seem small; but compounded over time, they can have an enormous impact on a person’s experience, health, and overall well-being. Research suggests that subtle forms of interpersonal discrimination like microaggressions are at least as harmful as more-overt expressions of discrimination. Below are some helpful tips from researchers to consider:
           </h3>
         </div>
-
-        {/* <div
-          className="bg-center md:block h-screen bg-no-repeat bg-auto bg-cover"
-          style={{
-            backgroundImage:
-              "https://images.unsplash.com/photo-1596796099969-bdada13e2a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')",
-          }}
-          alt="Banner with a Queer liberation not rainbow capitalism, from the Pride parade in Geneva (Switzerland), July 2019."
-        ></div> */}
-    
-
-                  <div className="hidden md:block h-screen bg-no-repeat bg-auto bg-[url('https://images.unsplash.com/photo-1596796099969-bdada13e2a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] h-auto"></div>
-
-        {/* <div className="bg-center hidden md:block h-screen bg-no-repeat bg-auto bg-[url('https://images.unsplash.com/photo-1596796099969-bdada13e2a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] h-auto"></div> */}
       </div>
-      <section className="bg-white py-4 mx-auto max-w-7xl px-8 sm:px-6 lg:px-8 text-gray-900 ">
+
+      <div className="text-center mx-auto my-8 hidden md:block">
+        <img
+          src="https://images.unsplash.com/photo-1596796099969-bdada13e2a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          alt="Banner with a Queer liberation not rainbow capitalism, from the Pride parade in Geneva (Switzerland), July 2019."
+          className="w-full max-w-7xl mx-auto rounded-md "
+        />
+      </div>
+        {/* <div className="bg-center hidden md:block h-screen bg-no-repeat bg-auto bg-[url('https://images.unsplash.com/photo-1596796099969-bdada13e2a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] h-auto"></div> */}
+      
+      <section className="bg-white py-4 mx-auto max-w-7xl px-8 sm:px-6 lg:px-8 text-gray-900  rounded-md">
         <p className="text-2xl m-4">
           {" "}
           When you’re an LGBTIQ person living in a heteronormative and
@@ -101,18 +93,21 @@ function Respond() {
         </p>
       </section>
 
-      <section className=" flex py-4 mx-auto my-6 max-w-7xl px-8 sm:px-6 lg:px-8 justify-center">
-        {/* <button type="button" onclick="location.href='/avoid'" className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"> */}
-        <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-          How to avoid causing microagressions?
-        </span>
-        {/* </button> */}
-        {/* <button type="button" onclick="location.href='/info'" className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-xl font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"> */}
-        <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-          More info about microagressions
-        </span>
-        {/* </button> */}
-      </section>
+
+      <section className="flex py-4 mx-auto my-6 max-w-7xl px-8 sm:px-6 lg:px-8 justify-center">
+          <Link href="/resources/avoid">
+            <div className="object-contain relative inline-flex items-center justify-center mb-2 mr-2 overflow-hidden text- md:text-xl font-medium bg-white p-6 text-purple rounded-lg ">
+              How to avoid causing microaggressions?
+            </div>
+          </Link>
+
+          <Link href="/resources">
+            <div className="object-contain relative inline-flex items-center justify-center mb-2 mr-2 overflow-hidden text- md:text-xl font-medium bg-white p-6 text-grey rounded-lg ">
+              Back to resources
+            </div>
+          </Link>
+        </section>
+
     </>
   );
 }

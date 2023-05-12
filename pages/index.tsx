@@ -24,10 +24,10 @@ export default function Microagressions(props: Props) {
 
   return (
     <div>
-      <main className="md:flex md:flex-row md:mx-auto h-screen items-center justify-center">
-        <div className="flex-1 lg:max-w-100 py-12 lg:py-56 md:flex lg:basis-1/2">
-          <div className="md:w-full text-center overflow-hidden justify-items-center">
-            <h1 className="block items-center text-7xl lg:text-8xl font-black text-lime tracking-tight mb-4 drop-shadow-lg shadow-lime text-center lg:p-12">
+<main className="md:flex md:flex-row mx-auto items-center justify-center">
+  <div className="flex-1 lg:max-w-100 py-12 lg:py-56 md:flex lg:basis-1/2">
+    <div className="md:w-full text-center overflow-hidden justify-items-center">
+      <h1 className="block items-center text-7xl lg:text-8xl font-black text-lime tracking-tight mb-4 drop-shadow-lg shadow-lime text-center lg:p-12">
               That's so gay!
             </h1>
             <p className="block xl:inline text-white font-light text-3xl md:leading-normal lg:text-5xl text-center overflow-hidden mx-4 p-4">
@@ -52,10 +52,11 @@ export default function Microagressions(props: Props) {
                 </a>
               </div>
             </div>
+
           </div>
         </div>
         <div
-          className="flex-initial h-screen lg:w-1/2 lg:bg-contain lg:bg-no-repeat lg:bg-center lg:block"
+          className="flex-initial lg:w-1/2 lg:bg-contain lg:bg-no-repeat lg:bg-center lg:block hidden md:block"
           style={{
             backgroundImage:
               "url(https://images.unsplash.com/photo-1530031092055-18d4a16ff6e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80)",

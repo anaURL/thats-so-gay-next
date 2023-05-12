@@ -1,14 +1,20 @@
+
 import React from "react";
+import { useRouter } from "next/router";
 import { Navbar } from "flowbite-react";
-import { Button } from "flowbite-react";
 import Image from "next/image";
 import logo from '../public/img/tsg1.png'
 
 const NavBar = () => {
+  const router = useRouter();
+
+  const isActive = (href: string) => {
+    return router.pathname === href ? "text-white" : "text-black";
+  };
+
   return (
     <div className="bg-purple">
-     
-      <Navbar fluid={true} rounded={true} className=" max-w-3xl !bg-purple">
+      <Navbar fluid={true} rounded={true} className="max-w-3xl !bg-purple">
         <Navbar.Brand href="/">
           <Image
             src= {logo}
@@ -23,18 +29,35 @@ const NavBar = () => {
           </span>
         </Navbar.Brand>
         <Navbar.Toggle />
-     
+
         <Navbar.Collapse>
-          <Navbar.Link href="/" active={true} className="flex md:order-2 ">
+          <Navbar.Link
+            href="/"
+            className={`flex md:order-2 ${isActive("/")}`}
+          >
             Home
           </Navbar.Link>
-          <Navbar.Link href="/about">About</Navbar.Link>
-          <Navbar.Link href="/resources">Resources</Navbar.Link>
-          <Navbar.Link href="/contribute">Contribute</Navbar.Link>
-         
+          <Navbar.Link
+            href="/about"
+            className={`flex md:order-2 ${isActive("/about")}`}
+          >
+            About
+          </Navbar.Link>
+          <Navbar.Link
+            href="/resources"
+            className={`flex md:order-2 ${isActive("/resources")}`}
+          >
+            Resources
+          </Navbar.Link>
+          <Navbar.Link
+            href="/contribute"
+            className={`flex md:order-2 ${isActive("/contribute")}`}
+          >
+            Contribute
+          </Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
-      </div>
+    </div>
   );
 };
 
