@@ -35,7 +35,7 @@ export default function Microagressions(props: Props) {
               the queer community
             </p>
             <div className="mt-5 sm:m-8 sm:flex flex-row sm:justify-center">
-              <div className="rounded-md">
+              <div className="rounded-md m-4">
                 <button
                   className="rounded-md border-2 px-8 py-3 lg:text-base font-bold md:py-4 md:px-10 text-black bg-gradient-to-r from-greenish to-lime"
                   onClick={() => scrollBy(1000, 0)}
@@ -43,7 +43,7 @@ export default function Microagressions(props: Props) {
                   Tell me more!
                 </button>
               </div>
-              <div className="sm:flex md:mx-2 sm:justify-center">
+              <div className="sm:flex md:mx-2 sm:justify-center m-4">
                 <a
                   href="/contribute"
                   className="mx-auto items-center justify-center rounded-md border-2 text-base font-bold py-3 px-10 md:text-lg text-black"
@@ -52,6 +52,9 @@ export default function Microagressions(props: Props) {
                 </a>
               </div>
             </div>
+
+
+
 
           </div>
         </div>

@@ -14,7 +14,8 @@ const NavBar = () => {
 
   return (
     <div className="bg-purple">
-      <Navbar fluid={true} rounded={true} className="max-w-3xl !bg-purple">
+
+      <Navbar fluid={true} rounded={true} className="max-w-3xl  !bg-purple">
         <Navbar.Brand href="/">
           <Image
             src= {logo}
@@ -29,8 +30,8 @@ const NavBar = () => {
           </span>
         </Navbar.Brand>
         <Navbar.Toggle />
-
         <Navbar.Collapse>
+            
           <Navbar.Link
             href="/"
             className={`flex md:order-2 ${isActive("/")}`}
@@ -57,6 +58,7 @@ const NavBar = () => {
           </Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
+
     </div>
   );
 };

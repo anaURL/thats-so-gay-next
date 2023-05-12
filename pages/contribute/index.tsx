@@ -81,7 +81,7 @@ export default function AddMicroagression() {
       <div className="flex justify-center bg-purple py-20">
         <form
           onSubmit={handleSubmit}
-          className="w-full max-w-4xl p-8 bg-white rounded-lg shadow-xl"
+          className="w-full max-w-4xl p-8 mx-8 bg-white rounded-lg shadow-xl"
         >
           {error ? <div className="text-red-500">{error}</div> : null}
           {message ? <div className="text-green-500">{message}</div> : null}
