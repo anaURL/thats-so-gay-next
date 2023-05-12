@@ -6,10 +6,10 @@ import Footer from "./Footer";
 
 export default function Layout(props:any) {
   return (
-    <div className="bg-purple w-full h-fit ">
+    <div className="bg-purple w-full ">
       {/* <Header /> */}
       <NavBar  />
-      <h1 className="text-red"> {props.title} </h1>
+      <h1 className=""> {props.title} </h1>
       {props.children}
       <Footer />
     </div>
