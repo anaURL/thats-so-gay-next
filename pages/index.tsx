@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useScrollBy } from "react-use-window-scroll";
-import { getMicroagressions } from './api/getMicroagressions';
-
+import { getMicroagressions } from "./api/getMicroagressions";
 
 type Props = {
   microagressionsProp: [Microagression];
@@ -20,27 +19,8 @@ export default function Microagressions(props: Props) {
   const scrollBy = useScrollBy();
 
   {
-    /* Handling delete option */
   }
-
-  // const handleDeleteMicroagression = async (microagressionId: string) => {
-  //   try {
-  //     let response = await fetch(
-  //       "http://localhost:3000/api/deleteMicroagression?id=" + microagressionId,
-  //       {
-  //         method: "POST",
-  //         headers: {
-  //           Accept: "application/json, text/plain, */*",
-  //           "Content-Type": "application/json",
-  //         },
-  //       }
-  //     );
-  //     response = await response.json();
-  //     window.location.reload();
-  //   } catch (error) {
-  //     console.log("An error occurred while deleting ", error);
-  //   }
-  // };
+  
 
   return (
     <div>
@@ -74,8 +54,15 @@ export default function Microagressions(props: Props) {
             </div>
           </div>
         </div>
-        <div className="flex-initial h-screen lg:w-1/2 lg:bg-contain lg:bg-no-repeat lg:bg-center lg:block" style={{ backgroundImage: "url(https://images.unsplash.com/photo-1530031092055-18d4a16ff6e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80)", height: '100vh' }} aria-label="Banner with a Queer liberation not rainbow capitalism, from the Pride parade in Geneva (Switzerland), July 2019."></div>
-
+        <div
+          className="flex-initial h-screen lg:w-1/2 lg:bg-contain lg:bg-no-repeat lg:bg-center lg:block"
+          style={{
+            backgroundImage:
+              "url(https://images.unsplash.com/photo-1530031092055-18d4a16ff6e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80)",
+            height: "100vh",
+          }}
+          aria-label="Banner with a Queer liberation not rainbow capitalism, from the Pride parade in Geneva (Switzerland), July 2019."
+        ></div>
       </main>
 
       {/* Retrieving microagressions from MongoDB */}
@@ -126,10 +113,9 @@ export default function Microagressions(props: Props) {
                         {" "}
                         <a
                           className="text-purple text-xl mb-0 md:mb-5 "
-                          href={`/contribute/${microagression._id}`}
+                          href={`/contribute`}
                         >
-                          Want to contribute? Suggest revision of the
-                          microagression
+                          Want to contribute? Add new microagression
                         </a>{" "}
                       </p>
                     </div>

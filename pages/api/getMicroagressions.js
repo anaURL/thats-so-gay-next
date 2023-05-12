@@ -3,7 +3,7 @@ import clientPromise from '../../lib/mongodb';
 
 export async function getMicroagressions() {
   const client = await clientPromise;
-  const db = client.db();
+  const db = client.db('Microagressions');
 
   const microagressions = await db
     .collection('microagressions')
@@ -15,7 +15,6 @@ export async function getMicroagressions() {
 
   return microagressions;
 }
-
 
 
 

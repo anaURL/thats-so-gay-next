@@ -75,9 +75,9 @@ export default function AddMicroagression() {
 </div> */}
  <div className="text-center md:px-12 my-6 min-h-screen ">
       <h1 className="md:mt-2 lg:text-7xl md:text-7xl text-4xl font-black sm:leading-8 md:tracking-tight md:px-8 text-lime"> Add your microaggression</h1>
-      <h3 className="text-2xl py-5 font-light md:mt-8 text-white" >  Microaggressions are the everyday slights, insults, put-downs, and invalidations that queer communities experience in their day-to-day interactions. Microaggressions take many forms. We want to make sure every experience is heard. If you have one to share, feel free to add a new microaggression entry.",
+      <h3 className="text-2xl py-5 font-light md:mt-8 text-white text-center" >  Microaggressions are the everyday slights, insults, put-downs, and invalidations that queer communities experience in their day-to-day interactions. Microaggressions take many forms. We want to make sure every experience is heard. If you have one to share, feel free to add a new microaggression entry.",
  </h3>
-       
+
       <div className="flex justify-center bg-purple py-20">
         <form
           onSubmit={handleSubmit}
@@ -106,7 +106,7 @@ export default function AddMicroagression() {
               htmlFor="content"
               className="block text-gray-700 font-bold mb-2"
             >
-              Content
+              Content 
             </label>
             <textarea
               id="content"
@@ -121,7 +121,7 @@ export default function AddMicroagression() {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="px-6 py-2 bg-lime text-white font-bold rounded-lg hover:bg-lime-500 focus:outline-none focus:ring focus:ring-lime-500 focus:ring-offset-2"
+              className="px-6 py-2 bg-purple text-white font-bold rounded-lg hover:bg-lime-500 focus:outline-none focus:ring focus:ring-lime-500 focus:ring-offset-2"
             >
               Add new microaggression
             </button>
