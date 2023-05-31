@@ -2,12 +2,12 @@
 
 'That's so gay' is a simple, easy-to-use, non-profit platform with aim to collect everyday microaggressions towards lesbian, gay, bisexual, trans, intersex and queer (LGBTIQ+) communities and highlight their harmful impact. It is an improved version of [my app built with Node, Express and EJS as templating language](https://github.com/anaURL/thats-so-gay).
 
-**Link to MVC:** Soon
+**Link to MVC:** [click here](https://thats-so-gay-next.vercel.app/)
 
 <img width="1256" alt="Screen Shot 2022-11-22 at 4 34 32 PM" src="https://user-images.githubusercontent.com/89602993/203356904-55d4c2dc-200d-4107-8db6-e5cd1a3715b1.png">
 
 # How It's Made
-**Tech used**: HTML, CSS, Tailwind, Javascript, NextJS, React, MongoDB, Tailwind 
+**Tech used**: HTML, CSS, Tailwind, Javascript, NextJS, React, MongoDB 
 
 This is a full-stack web application built with Next.js and React, utilizing MongoDB as the database technology. One of the main features of this app is that it allows users to read, edit, and add new microaggressions, as well as access a set of static files that are intended for educational purposes.
 
